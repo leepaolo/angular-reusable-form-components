@@ -1,0 +1,13 @@
+<div class="mb-4">
+  <label [for]="controlName" class="block text-sm font-medium text-gray-700">{{
+    displayLabel
+  }}</label>
+
+  <textarea
+    [formControl]="control"
+    [id]="controlName"
+    [placeholder]="placeholder"
+    rows="4"
+    class="mt-1 p-2 w-full border rounded-md"
+  ></textarea>
+</div>

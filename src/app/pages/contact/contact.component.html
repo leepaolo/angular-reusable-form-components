@@ -1,0 +1,55 @@
+<section>
+  <div
+    class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden p-10"
+  >
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <!-- Name input -->
+      <app-input
+        [controlName]="'name'"
+        [control]="nameControl"
+        [placeholder]="'Write your name'"
+        [label$]="nameLabel$"
+      >
+      </app-input>
+
+      <!-- Surname input -->
+      <app-input
+        [controlName]="'surname'"
+        [control]="surnameControl"
+        [placeholder]="'Write your surname'"
+        [label$]="surnameLabel$"
+      >
+      </app-input>
+
+      <!-- Description text-area -->
+      <app-text-area
+        [controlName]="'description'"
+        [control]="descriptionControl"
+        [placeholder]="'Tell us about what you need'"
+        [label$]="descriptionLabel$"
+      >
+      </app-text-area>
+
+      <!-- Email input -->
+      <app-input
+        [controlName]="'email'"
+        [control]="emailControl"
+        [placeholder]="'Write your email'"
+        [label$]="emailLabel$"
+        [type]="'email'"
+      >
+      </app-input>
+
+      <!-- Send Button -->
+      <button
+        type="submit"
+        class="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
+      >
+        Send
+      </button>
+      <div *ngIf="isContactFormSent">
+        <p>The form has been sent</p>
+      </div>
+    </form>
+  </div>
+</section>

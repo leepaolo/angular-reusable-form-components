@@ -1,0 +1,15 @@
+
+    {
+      "id": 1,
+      "titleHeader": "Tour of Rome",
+      "shortDescription": "Experience the wonders of Rome in a day.",
+      "fullDescription": "Join us in a day-long tour experiencing the wonders of Rome, from the ancient Colosseum to the majestic Vatican.",
+      "price": 100,
+      "group": true,
+      "private": false,
+      "italian": true,
+      "english": true,
+      "available": true,
+      "image": "https://i.imgur.com/VtGYUlq.jpeg"
+    }
+
